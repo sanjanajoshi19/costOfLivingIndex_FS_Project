@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(189, 178, 189);
+    padding: 25px 50px 75px 100px;
+    font-size: large;
+    margin: auto;
+}
+h1{
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    padding: auto;
+}
+
+table, tr{
+    padding: 25px 50px 75px 100px;
+    margin: 10px;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+}
+input[type=button] {
+    background-color: #0a0a0a;
+    color: white;
+    font-size: large;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+input[type=text] {
+    font-size: 20px;
+    align-items: center;
+    transition: width 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    /* margin-left: 50px; */
+}
+
+
+input[type=submit] {
+    font-size: medium;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #353333;
+    color: white;
+}
+
+#dispcity,#hashtable{
+    align-items: center;
+    display: flex;
+    font-size: large;
+    left: 70px;
+    justify-content:center;
+    position: relative;
+    background-color: #0a0a0a;
+    color: white;
+}
+/* add */
+#con,#coi,#resIndex,#grocIndex,#rentIndex{
+    left:70px;
+    position: relative;
+}
+
+#txtcon,#txtcoi,#txtresIndex,#txtgrocIndex,#txtrentIndex{
+    left:70px;
+    position: relative;
+    width: 80%;
+    height: 2px;
+}
+#labCon,#labCost,#labren,#labgroc,#labres{
+    left:70px;
+    position: relative;
+    margin-top: 0px;
+}
+
+/* modify */
+#modcon,#modcoi,#modresIndex,#modgrocIndex,#modrentIndex{
+    left:70px;
+    position: relative;
+}
+
+#txtModcon,#txtModcoi,#txtModresIndex,#txtModgrocIndex,#txtModrentIndex{
+    left:70px;
+    position: relative;
+    margin-top: 0px;
+    width: 80%;
+    height: 2px;
+}
+#labModCon,#labModCost,#labModren,#labModgroc,#labModres{
+    left:70px;
+    position: relative;
+    margin-top: 0px;
+}
+
+#delcity,#txtsearchcity{
+    margin-top: 0%;
+    width: 80%;
+    height: 4px;
+}

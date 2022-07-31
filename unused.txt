@@ -1,0 +1,75 @@
+# #display
+# def readData():
+#         #file= open('/home/sanjanajoshi/Downloads/costofliving.csv','r')
+#         df=pd.read_csv('/home/sanjanajoshi/Downloads/costofliving.csv')
+#         Country=df.Country
+#         print(Country)
+#         # for line in file:
+#         #     for Country in line:
+#         #         print(Country)
+# readData()
+
+# #add
+# def add():
+#     file_object=open('/home/sanjanajoshi/Downloads/costofliving.csv',"a+")
+#     file_object.seek(0)
+#     val = input("Enter Record details\n")
+#     if len(val) > 0 :
+#         file_object.write("\n")
+#     file_object.write(val)
+#     file_object= open('/home/sanjanajoshi/Downloads/costofliving.csv','r')
+#     for line in file_object:
+#             print(line)
+
+#     file_object.close()
+# add()
+
+# #delete
+# def delete():
+#     a_file = open("/home/sanjanajoshi/Downloads/costofliving.csv", "r")
+#     lines = a_file.readlines()
+#     a_file.close()
+
+#     del lines[569]
+
+#     new_file = open("/home/sanjanajoshi/Downloads/costofliving.csv", "w+")
+#     for line in lines:
+#         new_file.write(line)
+#     new_file.close()
+# delete()
+# readData()
+
+# #search
+# def search():
+#     string1="\"Jammu, India\",22.04,2.94,13.08,21.79,19.31,58.35"
+#     file1 = open("/home/sanjanajoshi/Downloads/costofliving.csv", "r")
+#     flag = 0
+#     index = 0
+#     for line in file1:  
+#         index =index+1 
+#         if string1 in line:
+            
+#             flag = 1
+#             break 
+
+#     if flag == 0: 
+#         print('String', string1 , 'Not Found') 
+#     else: 
+#         print('String', string1, 'Found In Line', index)
+    
+#     # closing text file    
+#     file1.close() 
+# search()
+
+# #modify
+
+
+
+# #hashtable
+# def __init__(self, size):
+#         self.size = size
+#         self.hash_table = self.create_buckets()
+
+
+# def create_buckets(self):
+#         return [[] for _ in range(self.size)]

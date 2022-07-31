@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Cost of Living Index</h1>
+    <br><br>
+    <table>
+        <tr>
+            <form action="/show_data" target="_blank" method="POST">
+                <label for="dispcity"></label>
+                <input type="submit" value="Display all Countries" id="dispcity"><br>
+            </form>
+        </tr>
+        <br>
+        <tr>
+            <form action="/show_hashTable" target="_blank" method="POST">
+                <label for="dispHashTable"></label>
+                <input type="submit" value="Display Hash Table" id="hashtable"><br>
+            </form>
+        </tr>
+        <br>
+        <tr>
+            <h4>Add Country</h4>
+            <form action="/add_country" method="post">
+                <label for="Country" id="labCon">Country</label>
+                <input type="text" id="txtcon" name="con">
+                <!-- <input type="submit" name="Add Cost of Living Index" id="con"><br>  -->
+
+                <label for="costOfLivingIndex" id="labCost">Cost of Living Index</label>
+                <input type="text" id="txtcoi" name="coi">
+                <!-- <input type="submit" name="Add Cost of Living Index" id="coi"><br>  -->
+
+                <label for="rentIndex_for" id="labren">Rent Index</label>
+                <input type="text" id="txtrentIndex" name="rentIndex">
+                <!-- <input type="submit" name="Add Rent Index" id="rentIndex"><br>  -->
+
+                <label for="grocIndex_for" id="labgroc">Groceries Index</label>
+                <input type="text" id="txtgrocIndex" name="grocIndex">
+                <!-- <input type="submit" name="Add Groceries Index" id="grocIndex"><br>  -->
+
+                <label for="resIndex_for" id="labres">Restaurant Index</label>
+                <input type="text" id="txtresIndex" name="resIndex">
+                <input type="submit" name="Add Restaurant Index" id="resIndex"><br> 
+            </form> 
+        </tr>
+        <br>
+        <tr>
+            <form action="/delete_country"  method="post">
+                <label for="delcity"><h4>Delete Country</h4></label>
+            <input type="text" name="delcityname" id="delcity">
+            <input type="submit" name="delete" id="delpcity" value="Delete"><br>
+            </form>
+        </tr>
+        <br>
+        <tr>
+            <form action="/search" target="_blank" method="POST">
+                <label for="searchcity"><h4>Search Country</h4></label>
+            <input type="text" name="searchcityname" id="txtsearchcity">
+            <input type="submit" name="Search City " id="searchcity" value="Search"><br>
+            </form>
+        </tr>
+        <br>
+        <tr>
+            <!-- <form action="/" method="POST">
+                <label for="modifycity">Modify</label>  -->
+            <h4>Modify</h4>
+            <form action="/modify_country" method="post">
+                <label for="Country" id="labModCon">Country</label>
+                <input type="text" id="txtModcon" name="Modcon">
+                <!-- <input type="submit" name="Add Cost of Living Index" id="modcon"><br>  -->
+
+                <label for="costOfLivingIndex" id="labModCost">Cost of Living Index</label>
+                <input type="text" id="txtModcoi" name="Modcoi">
+                <!-- <input type="submit" name="Modify Cost of Living Index" id="modcoi"><br>  -->
+
+                <label for="rentIndex_for" id="labModren">Rent Index</label>
+                <input type="text" id="txtModrentIndex" name="ModrentIndex">
+                <!-- <input type="submit" name="Modify Rent Index" id="modrentIndex"><br>  -->
+
+                <label for="grocIndex_for" id="labModgroc">Groceries Index</label>
+                <input type="text" id="txtModgrocIndex" name="ModgrocIndex">
+                <!-- <input type="submit" name="Modify Groceries Index" id="modgrocIndex"><br>  -->
+
+                <label for="resIndex_for" id="labModres">Restaurant Index</label>
+                <input type="text" id="txtModresIndex" name="ModresIndex">
+                <input type="submit" name="Modify Restaurant Index" id="modresIndex"><br> <br>
+                <br>
+            </form> 
+        </tr>
+        <i class='fa fa-linkedin-square' style='color: blue' &emsp;></i><a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BSUVksfF1R3akJ4KrD3B1DQ%3D%3D">Ananya Desai LinkedIN</a><br><br>
+        <i class='fa fa-linkedin-square' style='color: blue' &emsp;></i><a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BSUVksfF1R3akJ4KrD3B1DQ%3D%3D">Sanjana Joshi LinkedIN</a>
+    </table>
+</div><br>
+
+{% endblock %}

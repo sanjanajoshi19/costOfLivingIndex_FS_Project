@@ -1,0 +1,42 @@
+
+</html> --> -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Searched Country </title>      
+        <style>
+            h1 {text-align: center;}
+            h2 {text-align: center;}
+            /* div {text-align: center;} */
+
+  
+        .tab2 {
+            tab-size: 4;
+        }
+   
+        </style>        
+    </head>
+    <body>
+        <div align="center">
+            <h1>Searched Country: {{ value.country }}</h1>
+            <table>
+                <h1>
+                <!--Displaying the converted table-->
+                <tr>
+                    <th>Cost of Living Index &emsp; </th>
+                    <th >Rent Index  &emsp; </th>
+                    <th>Groceries Index &emsp;  </th>
+                    <th>Restaurant Index  &emsp; </th>
+                  </tr>
+                  <tr align="center">
+                    <td>{{value.costOfIndex[j]}}</td>
+                    <td>{{value.rentIndex[j]}}</td>
+                    <td>{{value.grocIndex[j]}}</td>
+                    <th>{{value.resIndex[j]}}</th>
+                  </tr>   
+                </h1> 
+            </table>
+        </div>
+    </body>
+</html>
